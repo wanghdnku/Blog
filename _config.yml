@@ -168,5 +168,5 @@ swiftype_key:
 
 # archive page title 
 archive:
-    title: archives
+    title: archive
     description: 可以根据归档日期检索所有文件
