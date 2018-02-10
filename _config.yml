@@ -30,14 +30,8 @@ permalink_defaults:
 
 menu:
   home: /
-  Tutorial: /tutorial/
-  LeetCode-category: /leetcode-category/
-  LeetCode-tag: /leetcode-tag/
-  archives: /archives/
+  archives: /archive/
   tags: /tags/
-  projects: /portfolio-slim/
-  support: /support/
-  RSS: /atom.xml
 
 
 # SNS settings
