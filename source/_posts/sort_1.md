@@ -6,9 +6,7 @@ date: 2018-02-07 06:00
 author: "Hayden Wang"
 header-img: "/images/algorithms.jpg"
 cdn: header-off
-tags:
-	- Algorithm
-	- Sort
+tags: [Algorithm]
 ---
 
 ## 1. 直接插入排序
@@ -23,6 +21,10 @@ def insertion_sort(a, n):
             j -= 1
         a[j] = temp
 ```
+
+### 复杂度分析
+
+### 稳定性分析
 
 ## 2. 希尔排序
 

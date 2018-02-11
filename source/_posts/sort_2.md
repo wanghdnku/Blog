@@ -8,7 +8,6 @@ header-img: "/images/algorithms.jpg"
 cdn: header-off
 tags:
 	- Algorithm
-	- Sort
 ---
 
 

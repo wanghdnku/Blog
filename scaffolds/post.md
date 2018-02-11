@@ -1,5 +1,10 @@
 ---
+layout: post
 title: {{ title }}
+subtitle: 
 date: {{ date }}
-tags:
+author: Hayden Wang
+header-img: /images/
+cdn: header-off
+tags: []
 ---

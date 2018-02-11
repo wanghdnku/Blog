@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-subtitle: 
+subtitle: My first post
 date: 2018-02-06 02:00
 author: "Hayden Wang"
 header-img: "/images/code.png"
