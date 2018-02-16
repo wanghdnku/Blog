@@ -28,12 +28,6 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 
-menu:
-  home: /
-  archives: /archive/
-  tags: /tags/
-
-
 # SNS settings
 # RSS:
 weibo_username: 1757057895

@@ -6,9 +6,7 @@ date: 2018-02-08 11:47:38
 author: "Hayden Wang"
 header-img: "/images/memory.jpg"
 cdn: 'header-off'
-tags:
-	- iOS
-	- Objective-C
+tags: [Objective-C]
 ---
 
 
