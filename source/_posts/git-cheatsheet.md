@@ -9,7 +9,9 @@ date: 2018-02-11 02:48:05
 subtitle: Git 常用操作
 ---
 
-## 1. 创建操作
+## Git Cheatsheet
+
+### 1. 创建操作
 
 复制一个已创建的仓库
 
@@ -23,7 +25,7 @@ git clone ssh://username@domain.com/repo.git
 git init
 ```
 
-## 2. 本地修改
+### 2. 本地修改
 
 显示工作路径下全部已修改的文件
 
@@ -67,7 +69,7 @@ git commit
 git commit --amend
 ```
 
-## 3. 提交历史
+### 3. 提交历史
 
 从最新提交开始显示所有的提交记录
 
@@ -87,7 +89,7 @@ git log -p <file>
 git blame <file>
 ```
 
-## 4. 分支与标签
+### 4. 分支与标签
 
 显示所有分支
 
@@ -125,7 +127,7 @@ git branch -d <branch>
 git tag <tag-name>
 ```
 
-## 5. 更新与发布
+### 5. 更新与发布
 
 列出当前配置的远程端
 
@@ -175,7 +177,7 @@ git branch -dr <remote/branch>
 git push --tags
 ```
 
-## 6. 合并与重置
+### 6. 合并与重置
 
 将分支合并到当前
 
@@ -214,7 +216,7 @@ git add <resolved-file>
 git rm <resolved-file>
 ```
 
-## 7. 撤销
+### 7. 撤销
 
 放弃工作目录下的所有修改
 
@@ -251,3 +253,19 @@ git reset --hard <commit>
 ```shell
 git reset --keep <commit>
 ```
+
+---
+
+## Workflow of Version Control
+
+### 1. The Basics
+
+![](/images/git-workflow-1.jpg)
+
+### 2. Branching & Merging
+
+![](/images/git-workflow-2.jpg)
+
+### 3. Sharing Work via Remote Repositories
+
+![](/images/git-workflow-3.jpg)
