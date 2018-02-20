@@ -1,7 +1,7 @@
 ---
 layout: post
 title: {{ title }}
-subtitle: 
+subtitle: {{ title }}
 date: {{ date }}
 author: Hayden Wang
 header-img: /images/

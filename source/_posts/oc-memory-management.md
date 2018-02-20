@@ -2,11 +2,11 @@
 layout: post
 title: "Objective-C 内存管理概述"
 subtitle: "ARC、MRC 和 GC"
-date: 2018-02-08 11:47:38
-author: "Hayden Wang"
-header-img: "/images/memory.jpg"
-cdn: 'header-off'
+author: Hayden Wang
+header-img: memory.jpg
+cdn: header-on
 tags: [Objective-C]
+date: 2018-02-08 11:47:38
 ---
 
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Objective-C 中的块对象
+title: "Objective-C 中的块对象"
+subtitle: "Block 的使用方法与特性分析"
 author: Hayden Wang
 header-img: keyboards.jpg
 cdn: header-on
 tags: [Objective-C]
 date: 2018-02-11 02:07:30
-subtitle: Block 的使用方法与特性分析
 ---
 
 **Block是带有自动变量的匿名函数。**

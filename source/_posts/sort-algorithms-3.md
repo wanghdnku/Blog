@@ -2,16 +2,16 @@
 layout: post
 title: "排序 (三)：基于交换的排序算法"
 subtitle: "冒泡排序 & 快速排序"
-date: 2018-02-07 08:00
-author: "Hayden Wang"
-header-img: "/images/algorithms.jpg"
-cdn: header-off
-tags:
-	- Algorithm
+author: Hayden Wang
+header-img: algorithms.jpg
+cdn: header-on
+tags: [Algorithm]
+date: 2018-02-07 08:00:00
 ---
 
-
 ## 1. 冒泡排序
+
+思路：重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。
 
 ```python
 def bubble_sort(a, n):
@@ -20,6 +20,8 @@ def bubble_sort(a, n):
             if a[j] < a[i]:
                 swap(a[j], a[i])
 ```
+
+---
 
 ## 2. 快速排序
 
