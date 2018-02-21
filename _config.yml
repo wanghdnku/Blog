@@ -158,3 +158,47 @@ swiftype_key:
 archive:
     title: archive
     description: 可以根据归档日期检索所有文件
+
+
+# MathJax
+math:
+  engine: 'mathjax' # 'mathjax' or 'katex'
+  mathjax:
+    src: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"
+    config: {
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        processEscapes: true
+      },
+      TeX: {
+        equationNumbers: {
+          autoNumber: "AMS"
+        }
+      }
+    }
+
+
+# Hexo Beautify
+beautify:
+  types:
+    - html
+    - css
+    - js
+  exclude:
+    - '*.min.css'
+    - '*.min.js'
+  html:
+    'indent_inner_html': false
+    'indent_size': 2
+    'indent_with_tabs': false
+    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
+  css:
+    'indent_size': 2
+    'newline_between_rules': true
+    'indent_with_tabs': false
+    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
+  js:
+    'indent_size': 2
+    'indent_with_tabs': false
+    # More Options (https://github.com/beautify-web/js-beautify/blob/master/README.md)
