@@ -60,7 +60,7 @@ ga_track_id:             # Format: UA-xxxxxx-xx
 ga_domain:
 
 # Sidebar settings
-sidebar-about-description: Across the Great Wall we can reach every corner in the world. # 个人描述
+sidebar-about-description: 汲汲骎骎，月异日新 # 个人描述
 sidebar-avatar: http://ww1.sinaimg.cn/mw690/68ba9367ly1fo8dsy3y18j21cj1cj1kx.jpg  # use absolute URL
 
 
