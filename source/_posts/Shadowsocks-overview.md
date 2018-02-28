@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 科学上网概述
+title: 越过长城，走向世界
 subtitle: 使用 Shadowsocks 科学上网
 date: 2018-02-09 03:30:38
 author: "Hayden Wang"
