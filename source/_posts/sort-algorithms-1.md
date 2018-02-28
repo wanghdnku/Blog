@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "排序 (一)：基于插入的排序算法"
-subtitle: "插入排序 & 希尔排序"
+title: 排序 (一)：基于插入的排序算法
+subtitle: 插入排序 & 希尔排序
 author: Hayden Wang
 header-img: algorithms.jpg
 cdn: header-on
@@ -50,25 +50,25 @@ def insertion_sort_opt(a, n):
 ```
 
 ---
-
+<br>
 
 ## 2. 希尔排序
 
 思路：希尔排序(Shell Sort)是插入排序的一种。也称缩小增量排序，是直接插入排序算法的一种更高效的改进版本。希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；随着增量逐渐减少，每组包含的关键词越来越多，当增量减至1时，整个文件恰被分成一组，算法便终止。步长的选择是希尔排序效率的关键，如果步长为1，即插入排序，时间复杂度退化到 O(n^2)
 
 ```python
-def insertion_sort(a, n, step):
+def insertion_sort_skip(a, n, step):
     for i in range(1, n):
-        temp = a[i]
+        num_i = a[i]
         j = i
-        while j-step >= 0 and temp < a[j-step]:
+        while j-step >= 0 and num_i < a[j-step]:
             a[j] = a[j-step]
             j -= step
-        a[j] = temp
+        a[j] = num_i
 
 def shell_sort(a, n):
     step = n / 2
     while step >= 1:
-        insertion_sort(a, n, step)
+        insertion_sort_skip(a, n, step)
         step /= 2
 ```

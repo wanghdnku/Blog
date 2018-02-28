@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "排序 (二)：基于选择的排序算法"
-subtitle: "选择排序 & 堆排序"
+title: 排序 (二)：基于选择的排序算法
+subtitle: 选择排序 & 堆排序
 author: Hayden Wang
 header-img: algorithms.jpg
 cdn: header-on
@@ -16,12 +16,15 @@ date: 2018-02-07 07:00:00
 ```python
 def selection_sort(a, n):
     for i in range(0, n):
-        min = i
+        min_index = i
         for j in range(i, n):
-            if a[j] < a[min]:
-                min = j
-        swap(a[min], a[i])
+            if a[j] < a[min_index]:
+                min_index = j
+        swap(a[min_index], a[i])
 ```
+
+---
+<br>
 
 ## 2. 堆排序
 

@@ -42,6 +42,10 @@ def BS_recursive(arr, target, left, right):
         return BS_recursive(arr, target, mid + 1, right)
 ```
 
+---
+<br>
+
+
 ## 2. 二分搜索树的数据结构
 
 ```python
@@ -69,7 +73,7 @@ def insert(node, key, value):
     return node
 ```
 
-### 2.2 查找key
+### 2.2 查找 key 对应的 value
 ```python
 # 在二分搜索树中查找key对应的value
 def search(node, key):
@@ -84,7 +88,9 @@ def search(node, key):
 ```
 
 ### 2.3 二叉树的深度优先遍历
-递归写法
+
+#### 递归写法
+
 ```python
 # 前序优先遍历
 def pre_order(node, result):
@@ -111,13 +117,15 @@ def post_order(node, result):
     return result
 ```
 
-非递归写法
+#### 非递归写法
+
 ```python
 
 ```
 
 ### 2.4 二叉树的广度优先遍历
-层序遍历连续打印
+
+#### 层序遍历连续打印
 ```python
 # 层序遍历
 def level_order(root):
@@ -135,7 +143,7 @@ def level_order(root):
     return result
 ```
 
-层序遍历分层打印
+#### 层序遍历分层打印
 ```python
 def level_order_hierarchical(root):
     if not root:
@@ -230,10 +238,3 @@ def remove(node, key):
         del node
         return successor
 ```
-
-$$\frac{\partial u}{\partial t}
-= h^2 \left( \frac{\partial^2 u}{\partial x^2} +
-\frac{\partial^2 u}{\partial y^2} +
-\frac{\partial^2 u}{\partial z^2}\right)$$
-
-Simple inline $ a = b + c $.
