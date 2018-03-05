@@ -41,8 +41,12 @@ int RabinKarp(string s[1..n], string pattern[1..m])
 
 ## Knuth-Morris-Pratt 算法
 
+http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
+
 
 ## Boyer-Moore 算法
+
+http://www.ruanyifeng.com/blog/2013/05/boyer-moore_string_search_algorithm.html
 
 
 ## References
