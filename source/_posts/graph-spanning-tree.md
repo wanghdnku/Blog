@@ -1,13 +1,15 @@
 ---
 layout: post
-title: 最小生成树算法
+title: 图论 (三)：最小生成树算法
 subtitle: Prim's & Kruskal's Algorithm
 author: Hayden Wang
 header-img: graph.jpg
 cdn: header-on
 tags: [Algorithm]
-date: 2018-02-28 20:29:05
+date: 2018-03-01 20:29:05
 ---
+
+前提：带权无向图
 
 这里讨论的两种最小生成树算法 Prim 算法和 Kruskal 算法都是贪心算法。
 
@@ -15,6 +17,10 @@ date: 2018-02-28 20:29:05
 
 ## 贪心算法的思路
 
+**切分**：把图中的结点分为两部分，成为一个切分(Cut)。
+**横切边**：如果一个边的两个端点，属于切分不同的两边，这个边称为横切边(Corssing Edge)。
+
+**切分定理**：给定__任意__切分，横切边中最小的边必然属于最小生成树。
 
 
 ```shell
@@ -28,21 +34,25 @@ GENERIC-MST(G, w)
 
 ## Kruskal's Algorithm
 
+使用数据结构：并查集
+
 ```shell
 MST-KRUSKAL(G, w)
     A = []
-    for each vertex v from G.V
-        MAKE-SET(v)
+    UNION-FIND(G.V)
     sort the edges of G.E into nondecreasing order by weight w
     for each edge (u,v) from G.E
-        if FIND-SET(u) != FIND-SET(v)
+        if UNION-FIND.find(u) != UNIONFIND.find(v)
             add (u,v) to A
-            UNION(u,v)
+            UNION-FIND.union(u,v)
     return A
 ```
 
 ## Prim's Algorithm
 
+使用数据结构：最小优先队列
+
 ```shell
 Input: G-Graph, w-weight, r-root
 ```
+

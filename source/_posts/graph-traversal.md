@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 图的遍历
+title: 图论 (二)：图的遍历
 subtitle: 深度优先 & 广度优先
 author: Hayden Wang
 header-img: graph.jpg

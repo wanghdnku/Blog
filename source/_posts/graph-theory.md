@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 图论基础
+title: 图论 (一)：图论基础
 subtitle: graph-theory
 author: Hayden Wang
 header-img: graph.jpg
