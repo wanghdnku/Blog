@@ -21,6 +21,9 @@ Dijkstra 的核心在于，构造一个节点集合 S，对于 S 中的每一个
 
 一句话总结，Dijkstra 算法利用贪心的思想，在剩下的节点中选取离源点最近的那个加入集合，并且更新其邻近节点到源点的距离，直至所有节点都被加入集合。关于 Dijkstra 算法的正确性分析，可以使用数学归纳法证明，详见《算法导论》第 24 章单源最短路径。这里给出伪代码如下:
 
+前提：
+- 没有负权边
+
 ```
 DIJKSTRA(G, s)
 S = EMPTY
@@ -34,7 +37,14 @@ While Q is not empty
             parent[v] = u
 ```
 
+复杂度 $O(E \log V)$
+
 ### Bellman-Ford Algorighm
+
+前提：
+- 可以有负权边，不能有负权环
+
+复杂度 $O(EV)$
 
 
 ## 多源最短路径问题
@@ -59,3 +69,11 @@ For k = 1 to n
             Distance(k)_ij = min(Distance(k-1)_ij, Distance(k-1)_ik+ Distance(k-1)_kj) 
 Return Distance(n)
 ```
+
+
+## 附：最长路径问题
+
+- 最长路径不能有正权环
+- 无权图的最长路径问题是指数级难度的
+- 对于有权图，不能使用 Dijkstra 算法
+- 可以使用 Bellman-Ford 算法
