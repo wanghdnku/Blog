@@ -27,46 +27,65 @@ def bubble_sort(a, n):
 ## 2. 快速排序
 
 ### 2.1 基础快速排序
+
+![基础快速排序](/images/sort/quick_sort_1way.png)
+![基础快速排序](/images/sort/quick_sort_1way_end.png)
+
 ```python
-def quick_sort(a, l, r):
+def quick_sort(arr, l, r):
     if l >= r:
         return
-    pivot = partition(a, l, r)
-    quick_sort(a, 0, pivot-1)
-    quick_sort(a, pivot+1, 0)
+    pivot = partition(arr, l, r)
+    quick_sort(arr, 0, pivot-1)
+    quick_sort(arr, pivot+1, 0)
     
-def partition(a, l, r):
-    p = a[l]
+# 对 arr[l...r] 部分进行 partition 操作
+# 返回p，使得 arr[l...p-1] < arr[p], arr[p+1...r] > arr[p]
+def partition(arr, l, r):
+    pivot = arr[l]
+    # arr[l+1...j] < pivot, arr[j+1...i] > pivot
     j = l
     for i in range(l+1, r):
-        if a[i] < p:
-            swap(a[i], a[j+1])
+        if arr[i] < pivot:
+            swap(arr[i], arr[j+1])
             j += 1
-    swap(a[l], a[j])
+    swap(arr[l], arr[j])
     return j
 ```
 
 ### 2.2 双路快速排序
-把等于pivot的元素分布于两侧，解决重复元素过多时算法退化的问题
+
+存在问题：面临大量重复元素的情况下，退化成 $O(n^2)$ 的算法。
+解决方法：把等于pivot的元素分布于两侧，解决重复元素过多时算法退化的问题
+
+![基础快速排序](/images/sort/quick_sort_2way.png)
+![基础快速排序](/images/sort/quick_sort_2way_end.png)
+
 ```python
-def partition(a, l, r):
-    p = a[l]
+def partition(arr, l, r):
+    pivot = arr[l]
     i, j = l+1, r
     while True:
-        while a[i] < p:
+        while arr[i] < pivot:
             i += 1
-        while a[j] > p:
+        while arr[j] > pivot:
             j -= 1
         if i > j:
             break
-        swap(a[i], a[j])
+        swap(arr[i], a[j])
         i += 1
         j -= 1
-    swap(a[l], a[j])
+    swap(a[l], arr[j])
     return j
 ```
 
 ### 2.3 三路快速排序
+
+对双路快拍的再次优化，不分成两部分，而是分成三部分：e < pivot, e = pivot, e > pivot
+
+![基础快速排序](/images/sort/quick_sort_3way.png)
+![基础快速排序](/images/sort/quick_sort_3way_end.png)
+
 ```python
 def quick_sort(arr, l, r):
     if l >= r:
