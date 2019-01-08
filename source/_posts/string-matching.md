@@ -4,7 +4,7 @@ title: 字符串匹配算法总结
 subtitle: String Matching Algorithms
 author: Hayden Wang
 header-img: information.jpg
-cdn: header-on
+# cdn: header-off
 tags: [Algorithm]
 date: 2018-03-05 15:23:08
 ---

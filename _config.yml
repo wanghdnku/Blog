@@ -138,7 +138,7 @@ deploy:
 
 
 # img CDN path
-cdn-url: http://p3v455jfd.bkt.clouddn.com/ # 你的CDN地址
+cdn-url: /images/title_img/ # Use local image.
 
 # Qiniu imageView2 API
 # More info http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
